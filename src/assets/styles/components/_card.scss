@@ -1,0 +1,56 @@
+@use '../utils/variables' as *;
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0.75rem !important;
+    box-shadow: $base-card-box-shadow;
+    border:0.5px solid #00000020 !important;
+
+    .card_content,.card_footer {
+        margin: 20px;
+    }
+    .card_footer {
+        border-top: 1px solid #ddd;
+        padding: 10px 0px;
+        margin-bottom: 0px;
+        span {
+            color: #03c503;
+        }
+    } 
+
+    .card_content {
+        display: flex;
+        margin-bottom:0px;
+        justify-content: space-between;
+        .card_icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            border-radius: 10px;
+            margin-top: -36px;
+            color: #fff;
+        }
+        .card_right_widget{
+            h3 {
+                font-weight: 300;
+                font-size: 14px;
+                color: #838383;
+            }
+            h2 {
+                color: #000;
+                font-size: 22px;
+                font-weight: 600;
+                text-align:right;
+            }
+        } 
+
+    }
+
+    
+}

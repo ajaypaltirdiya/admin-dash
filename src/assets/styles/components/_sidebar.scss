@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+
+.sidebar{
+    height: 100vh;
+    border-radius: 20px;
+    overflow: hidden;
+
+    .active{
+        background: $bg-primary-gradient;
+    }
+    
+    li.nav-item {
+        margin-bottom: 5px;
+    }
+}

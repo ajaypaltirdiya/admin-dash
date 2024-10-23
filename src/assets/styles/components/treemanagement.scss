@@ -1,0 +1,58 @@
+@use '../utils/variables' as *;
+
+.tree_tabs_contain{
+    button{
+        background-color:#ddd;
+        padding:5px 10px;
+        color:#333;
+        border:1px solid #ddd;
+        outline: none;
+        &.active{
+            background-color: $primary-color;
+            color:#fff;
+        }
+    }
+    
+}
+
+.tree_checkbox_wrapper {
+    max-height: 320px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    &::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb
+    {
+        background-color: $primary-color;
+        border: 1px solid #a7a7a7;
+    }
+
+    .checkbox_title_permission {
+        background: #f0f2f5;
+        margin-bottom: 5px;
+        font-size: 13px;
+        padding: 5px;
+        border: 0.5px solid #ddd;
+    }
+
+}
+.accordion_header {
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+}

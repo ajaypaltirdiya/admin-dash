@@ -1,0 +1,10 @@
+@use '../utils/variables' as *;
+
+.error-boundary {
+    text-align: center;
+    &> svg {
+        color: $primary-color;
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+}

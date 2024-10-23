@@ -1,0 +1,36 @@
+@use '../utils/variables' as *;
+
+.login_wrapper{
+    background-image:url('@/assets/images/login-bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    .login_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .6rem;
+        margin-top: -26px;
+        background:$bg-primary-gradient;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .loginWight_icons {
+            display: flex;
+            gap: 45px;
+            color: #fff;
+            font-size: 1.4rem;
+            margin-top: 14px;
+            svg {
+                transition: 0.3s all;
+                &:hover {
+                cursor: pointer;
+                transform: scale(1.08);
+                }
+            }
+        }
+    }
+}
